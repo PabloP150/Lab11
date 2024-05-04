@@ -1,11 +1,9 @@
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Routes, Route } from "react-router-dom";
 import {
   Home,
   Metroville,
   RiverCity,
   CoastalTown,
-  NewTown,
   Barra,
   Norute,
   Park,
@@ -36,7 +34,7 @@ function App() {
         <Route path="/CoastalTown" element={<CoastalTown />}>
           <Route path="roast" element={<Roast/>} />
         </Route>
-        
+
         <Route path="*" element={<Norute />} />
       </Routes>
     </div>
